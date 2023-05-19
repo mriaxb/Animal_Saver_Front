@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
             {/* <img>
             Logo
             </img> */}
-            <p>© 2022 Animal Saver. Todos os direitos reservados</p>
+            <p>© 2023 Animal Saver. Todos os direitos reservados</p>
         </footer>
     );
 };
