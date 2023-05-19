@@ -5,7 +5,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
@@ -19,15 +19,16 @@ h1{
 nav{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
-   
+    justify-content: flex-start;
 }
 
 a{
+    display: flex;
+    align-items: center;
     color: #FFF;
     background: none;
     border: none;
+    margin-inline: 20px;
 
     cursor: pointer;
 }
@@ -46,6 +47,7 @@ span{
     background: #3FB8A7;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 
     font-family: 'Inter';
     font-style: normal;
