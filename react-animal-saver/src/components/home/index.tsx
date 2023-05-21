@@ -8,6 +8,7 @@ import imagemDog2 from '../../assets/dog2.jpg'
 import imagemDog3 from '../../assets/dog3.jpg'
 import imagemDog4 from '../../assets/dog4.jpg'
 import { PatrocinioList } from '../PatrocinioList';
+import { Servicos } from '../Servicos';
 
 
 
@@ -55,6 +56,7 @@ export const Home = () => {
             </main>
 
             <PatrocinioList></PatrocinioList>
+            <Servicos></Servicos>
         </div>
     )
 }
