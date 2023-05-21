@@ -7,6 +7,9 @@ import imagemDog1 from '../../assets/dog1.jpg'
 import imagemDog2 from '../../assets/dog2.jpg'
 import imagemDog3 from '../../assets/dog3.jpg'
 import imagemDog4 from '../../assets/dog4.jpg'
+import { PatrocinioList } from '../PatrocinioList';
+
+
 
 
 const images = [imagemDog1, imagemDog2, imagemDog3, imagemDog4]
@@ -21,6 +24,7 @@ export const Home = () => {
     }, [])
 
     return (
+
         <div>
             <header className={styles.header}>
                 <h1>Animal Saver</h1>
@@ -32,19 +36,25 @@ export const Home = () => {
                 </nav>
                 <button className={styles.button}>Cadastre-se</button>
             </header>
-            <main className={styles.div_carousel}>
+
+            <main className={styles.carrousel_pai}>
                 
-                   <motion.main ref={carousel} className={styles.carousel} whileTap={{cursor: "grabbing"}}>
-                        <motion.main className={styles.inner_carousel} drag="x" dragConstraints={{right: 0, left: -width}} initial={{x: 100}} animate={{x: 0}} transition={{duration: 0.8}}>
-                            {images.map(images =>(
-                                <motion.main key={images} className={styles.item_carousel}>
-                                    <img src={images} alt="Imagens de animais abandonados" />
-                                </motion.main>
-                            ))}
-                        </motion.main>
-                   </motion.main>
+                <article className={styles.div_carousel}>
+                    <motion.main ref={carousel} className={styles.carousel} whileTap={{cursor: "grabbing"}}>
+                            <motion.main className={styles.inner_carousel} drag="x" dragConstraints={{right: 0, left: -width}} initial={{x: 100}} animate={{x: 0}} transition={{duration: 0.8}}>
+                                {images.map(images =>(
+                                    <motion.main key={images} className={styles.item_carousel}>
+                                        <img src={images} alt="Imagens de animais abandonados" />
+                                    </motion.main>
+                                ))}
+                            </motion.main>
+                    </motion.main>
+                </article>
+                   
                 
             </main>
+
+            <PatrocinioList></PatrocinioList>
         </div>
     )
 }

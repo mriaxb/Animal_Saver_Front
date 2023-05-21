@@ -2,6 +2,14 @@
 
 :root{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --dark-gray: #1C1B1B;
+  --blue: #175EA8;
+  --white: #FFFFFF;
+  --gray--100: #F4F4F4;
+  --gray--200: #E9E9E9;
+
+
 }
 
 body {
@@ -9,6 +17,6 @@ body {
   padding: 0;
   border: 0;
 
-  background: url(https://s3-alpha-sig.figma.com/img/23c3/06f4/90668af634f83858f40bbd35f95fd9f5?Expires=1685318400&Signature=g78l0z8cE56XrDxCEvm8pAWNKtuk4Y~MT2FSuEO2kvxxNHTZBi7nOO-FLhl6f6ZME0HpqeX1wm0uYFyAzyOy0~VmXC9VLGqXITngcgwfvXINo42qO8ty2REn4mLVv0Gr8QeWN5rKvXfykLO7Gt2kLffRkZ~8uP3X4PzjbWgsk394LU79jFMkSwqKA5JX4GY1eullmw8k-mGaFvmFxPilNQpo2VvefSOjz0XQEY-pImQxrSNCkNuoUNVFSWUy5lBK2R3gfdHG8ZutKObJ2gQ1AcSQPh7CBDMOpFHvaDOzcmKFL3eYyLLbbKFpPAGCDEV7DezUgIVM0e3TbYYQkZWc2A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background: var(--gray--200);
 }
 

@@ -1,4 +1,3 @@
-
 import { Pets } from "./components/Pets"
 import { Fornecedor } from "./components/fornecedores"
 import { Home } from "./components/home"
@@ -19,6 +18,7 @@ function App() {
           <Route path="/protetor" element={<Protetor/>}/>
         </Routes>
       </Router>
+
     </>
   )
 }
