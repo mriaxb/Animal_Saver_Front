@@ -1,0 +1,104 @@
+.header {
+    background-color: var(--dark-gray);
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+h1{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    background: none;
+    border: none;
+    margin-inline: 20px;
+
+    cursor: pointer;
+}
+
+span{
+    background-color: var(--white);
+    width: 4px;
+    height: 4px;
+    left: 6px;
+    border-radius: 10px;
+}
+
+.button{
+    width: 190px;
+    height: 60px;
+    background: var(--blue);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--white);
+}
+
+.home_class{
+    color: var(--white);
+    font-weight: 700;
+}
+.carrousel_pai{
+    background-image: url('../../assets/fundo1.jpeg');
+
+}
+
+.div_carousel{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel{
+    cursor: grab;
+    overflow: hidden;
+}
+
+.inner_carousel{
+    display: flex;
+
+}
+
+.item_carousel{
+    min-height: 100px;
+    min-width: 200px;
+    padding-inline: 18px;
+}
+
+.item_caurosel img{
+    width: 20%;
+    height: 20%;
+    border-radius: 12px;
+    pointer-events:none;
+}
+
+img{
+    width: 220px;
+}
