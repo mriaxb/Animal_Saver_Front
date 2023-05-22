@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import { Pets } from "./components/Pets"
 import { Fornecedor } from "./components/fornecedores"
 import { Home } from "./components/home"
@@ -17,6 +18,7 @@ function App() {
           <Route path="/fornecedor" element={<Fornecedor/>}/>
           <Route path="/protetor" element={<Protetor/>}/>
         </Routes>
+        <Footer/>
       </Router>
 
     </>

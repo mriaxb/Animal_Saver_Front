@@ -63,6 +63,8 @@ span{
 }
 .carrousel_pai{
     background-image: url('../../assets/fundo1.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
 
 }
 
