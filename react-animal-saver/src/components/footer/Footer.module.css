@@ -1,0 +1,17 @@
+.footer {
+    background-color: #192427;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end    ;
+
+}
+
+
+p{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 30px;
+}
