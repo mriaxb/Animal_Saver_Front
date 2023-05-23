@@ -26,7 +26,7 @@ export const Servicos = () => {
                     <button className={style.button}>VER MAIS</button>
                 </article>
                 <article className={style.article}>
-                    <div className={style.banner_title}>ASSINAURAS</div>
+                    <div className={style.banner_title}>ASSINATURAS</div>
                     <img src={assinatura} alt="foto de assinatura" className={style.banner_foto}/>
                     <button className={style.button}>VER MAIS</button>
                 </article>

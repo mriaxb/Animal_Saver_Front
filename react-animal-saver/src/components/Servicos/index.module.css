@@ -8,6 +8,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 5px;
+    width: auto;
+
 }
 .title{
     color: var(--dark--gray);
@@ -21,8 +24,8 @@
     justify-content: center;
 
     background-color: var(--gray--100);
-    height: 500px;
-    width: 360px;
+    height: 480px;
+    width: 340px;
     margin-top: -50px;
 
     box-shadow: 10px 2px 20px 2px rgba(0, 0, 0, 0.25);
@@ -44,7 +47,7 @@
 .banner_foto{
     border-radius: 13px;
     margin-top: 30px;
-    height: 300px;
+    height: 280px;
 }
 
 .button{
