@@ -14,6 +14,7 @@ export const Servicos = () => {
             </h1>
         
             <article className={style.article_pai}>
+            
                 <img src={setaEsquerda} alt="seta esquerda" className={style.seta} />
                 <article className={style.article}>
                     <div className={style.banner_title}>ADOÇÕES</div>
@@ -30,7 +31,10 @@ export const Servicos = () => {
                     <img src={assinatura} alt="foto de assinatura" className={style.banner_foto}/>
                     <button className={style.button}>VER MAIS</button>
                 </article>
-                <img src={setaDireita} alt="seta direita" className={style.seta}/>
+                {/* <div className={style.seta}> */}
+                    <img src={setaDireita} alt="seta direita" className={style.seta} />
+
+                {/* </div> */}
             </article>
         </section>
     )
