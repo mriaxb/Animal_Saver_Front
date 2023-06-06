@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styles from './index.module.css'
 import { motion } from 'framer-motion'
 import { useState, useEffect} from 'react'
@@ -9,6 +8,7 @@ import imagemDog3 from '../../assets/dog3.jpg'
 import imagemDog4 from '../../assets/dog4.jpg'
 import { PatrocinioList } from '../PatrocinioList';
 import { Servicos } from '../Servicos';
+import { Header } from '../Header';
 
 
 
@@ -27,16 +27,8 @@ export const Home = () => {
     return (
 
         <div>
-            <header className={styles.header}>
-                <h1>Animal Saver</h1>
-                <nav>
-                    <a className={styles.home_class}><Link to="/">Home</Link></a> <span></span>
-                    <a><Link to="/pets">Pets</Link></a> <span></span>
-                    <a><Link to="/fornecedor">Fornecedores</Link></a> <span></span>
-                    <a><Link to="/protetor">Protetores</Link></a>
-                </nav>
-                <button className={styles.button}>Cadastre-se</button>
-            </header>
+
+            <Header/>
 
             <main className={styles.carrousel_pai}>
                 
