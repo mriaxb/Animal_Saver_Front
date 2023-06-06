@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;600;700;900&display=swap');
+
+:root{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --dark-gray: #1C1B1B;
+  --blue: #175EA8;
+  --white: #FFFFFF;
+  --gray--100: #F4F4F4;
+  --gray--200: #E9E9E9;
+
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  background: var(--gray--200);
+}
+
