@@ -1,8 +1,7 @@
-import Footer from "./components/Footer"
-import { Pets } from "./components/Pets"
-import { Fornecedor } from "./components/fornecedores"
-import { Home } from "./components/home"
-import { Protetor } from "./components/protetores/protetores"
+import Footer from '../src/components/Footer';
+import { Pets } from "../src/components/Pets";
+import { Home } from "./components/Home";
+import { Protetor } from "./components/Protetores/protetores";
 import './global.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
  
@@ -15,8 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/pets" element={<Pets/>}/>
-          <Route path="/fornecedor" element={<Fornecedor/>}/>
           <Route path="/protetor" element={<Protetor/>}/>
+          {/* <Route path="/login" element={<Login/>}/>
+          <Route path="/cadastrodeanimal" element={<CadastroAnimal/>}/> */}
         </Routes>
         <Footer/>
       </Router>
