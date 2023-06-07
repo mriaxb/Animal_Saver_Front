@@ -4,7 +4,7 @@ import { Home } from './components/Home';
 import { Protetor } from "./components/Protetores/protetores";
 import './global.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { CadastroProtetora } from './components/CadastroProtetora';
+import { LoginProtetora } from './components/LoginProtetora';
 import { Header } from './components/Header';
  
 
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/pets" element={<Pets/>}/>
           <Route path="/protetor" element={<Protetor/>}/>
-          <Route path="/cadastroProtetora" element={<CadastroProtetora/>}/>
+          <Route path="/loginProtetora" element={<LoginProtetora/>}/>
           
           {/* <Route path="/login" element={<Login/>}/>
           <Route path="/cadastrodeanimal" element={<CadastroAnimal/>}/> */}

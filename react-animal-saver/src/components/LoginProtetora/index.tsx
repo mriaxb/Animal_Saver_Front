@@ -3,7 +3,7 @@ import style from './index.module.css';
 
 
 
-export const CadastroProtetora = () => {
+export const LoginProtetora = () => {
 
     return(
         <>

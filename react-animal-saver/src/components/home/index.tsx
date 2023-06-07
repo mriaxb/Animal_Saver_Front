@@ -8,7 +8,6 @@ import imagemDog3 from '../../assets/dog3.jpg'
 import imagemDog4 from '../../assets/dog4.jpg'
 import { PatrocinioList } from '../PatrocinioList';
 import { Servicos } from '../Servicos';
-import { Header } from '../Header';
 
 
 
@@ -28,7 +27,6 @@ export const Home = () => {
 
         <div>
 
-            <Header/>
 
             <main className={styles.carrousel_pai}>
                 
