@@ -9,6 +9,15 @@
     justify-content: space-around;
 
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav a{
+    text-decoration: none;
+    color: var(--dark--gray);
+}
 a{
     text-decoration: none;
     display: flex;
