@@ -17,24 +17,29 @@
     flex-direction: column;
 }
 .contato_email{
-    margin-top: -20px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
     gap: 7px;
+}
+.contato_email img{
+    margin-top: -8px;
 }
 .contato_email p{
     font-size: 12px;
 }
 .contato_telefone{
-    margin-top: -10px;
+    margin-top: 0px;
     display: flex;
     align-items: center;
     gap: 7px;
+    margin-left: 12px;
 }
 .contato_telefone p{
     font-size: 12px;
 }
 .contato img{
+    margin-left: -10px;
     width: 26px;
 }
 .mid{
