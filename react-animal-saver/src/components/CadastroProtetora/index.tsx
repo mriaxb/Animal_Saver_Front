@@ -14,44 +14,44 @@ export const CadastroProtetora = () => {
                         <Row  className="mb-3">
                             <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>NOME</Form.Label>
-                                <Form.Control type="text" placeholder="Enter email" />
+                                <Form.Control type="text" placeholder="Escreva o nome" />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridPassword">
                                 <Form.Label>TELEFONE</Form.Label>
-                                <Form.Control type="text" placeholder="Password" />
+                                <Form.Control type="text" placeholder="Escreva o telefone" />
                             </Form.Group>
                         </Row>
 
                         <Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>ENDEREÇO</Form.Label>
-                                <Form.Control type="text" placeholder="Enter email" />
+                                <Form.Control type="text" placeholder=" Escreva o endereço" />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridPassword">
                                 <Form.Label>ESPAÇO FÍSICO</Form.Label>
-                                <Form.Control type="text" placeholder="Password" />
+                                <Form.Control type="text" placeholder="Escreva o nomeescreva o espaço físico" />
                             </Form.Group>
                         </Row><Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>EMAIL</Form.Label>
-                                <Form.Control type="text" placeholder="Enter email" />
+                                <Form.Control type="text" placeholder="Escreva o email" />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridPassword">
                                 <Form.Label>GASTOS</Form.Label>
-                                <Form.Control type="text" placeholder="Password" />
+                                <Form.Control type="text" placeholder="Escreva os gastos" />
                             </Form.Group>
                         </Row><Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>SENHA</Form.Label>
-                                <Form.Control type="password" placeholder="Enter email" />
+                                <Form.Control type="password" placeholder="Escreva a senha" />
                             </Form.Group>
 
                             <Form.Group as={Col} controlId="formGridPassword">
                                 <Form.Label>LOTAÇÃO</Form.Label>
-                                <Form.Control type="text" placeholder="Password" />
+                                <Form.Control type="text" placeholder="Escreva a lotação" />
                             </Form.Group>
                         </Row>
                     </Form>
