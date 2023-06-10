@@ -10,6 +10,7 @@ import { CadastroProtetora } from './components/CadastroProtetora';
  
 
 function App() {
+  
 
   return (
     <>

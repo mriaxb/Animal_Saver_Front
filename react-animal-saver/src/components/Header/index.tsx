@@ -1,10 +1,11 @@
 import styles from './index.module.css';
 import { Link } from 'react-router-dom';
 import logoAnimalSave from '../../assets/Logotipo Animal Save 2.svg';
+import { useState } from 'react';
 
 
 export const Header = () => {
-
+    const [currentPage, setCurrentPage] = useState('home');
 
     return(
 
