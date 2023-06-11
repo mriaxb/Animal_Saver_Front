@@ -1,0 +1,14 @@
+.btn_pets{
+    width: 100%;
+    display: flex;
+    text-align: center!important;
+    background-color: transparent!important;
+    color:#175EA8!important;
+    border-color: #175EA8!important;
+    border-radius: 0!important;
+}
+
+.btn_pets:hover{
+    color: #FFF!important;
+    background-color: #175EA8!important;
+}

@@ -3,6 +3,7 @@ import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import style from './index.module.css'
 import cat1 from '../../assets/dog12.png'
+import { DetalharPets } from '../DetalharPets';
 
 export const Pets = () => {
     return (
@@ -37,7 +38,7 @@ export const Pets = () => {
                                             <span><strong>Raça:</strong><span>Indefinido</span></span>
                                             <span><strong>Vizualizações:</strong><span>100</span></span>
                                             <div className="text-center mt-4 px-4">
-                                                <Button className={style.btn_pets}>Detalhar</Button>
+                                               <DetalharPets/>
                                             </div>
                                         </Card.Body>
                                     </Card>
@@ -379,7 +380,8 @@ export const Pets = () => {
                 <Row className="g-0">
                     <Col>
                         <div className={`d-flex ${style.title_pets}`}>
-                            <h1 className="d-flex text-white">Cavalos</h1>
+                            <h1 className="d-flex text-white">Cavalos
+                            </h1>
                         </div>
                     </Col>
                 </Row>
