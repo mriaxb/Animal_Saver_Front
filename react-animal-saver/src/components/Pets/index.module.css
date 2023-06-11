@@ -70,3 +70,17 @@
     color: #FFF!important;
     background-color: #175EA8!important;
 }
+
+.carousel_pets{
+    padding-block: 2rem;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #666!important;
+}
+.indicators_pets button{
+    background-color: #666!important;
+}
+.indicators_pets button.active{
+    background-color: #175EA8!important;
+}
