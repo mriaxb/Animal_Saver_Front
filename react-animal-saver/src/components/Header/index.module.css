@@ -36,13 +36,6 @@ a:hover{
 .login_class{
     font-weight: 700;
 }
-span{
-    background-color: #000;
-    width: 4px;
-    height: 4px;
-    left: 6px;
-    border-radius: 10px;
-}
 
 .button{
     font-family: "Karla";
