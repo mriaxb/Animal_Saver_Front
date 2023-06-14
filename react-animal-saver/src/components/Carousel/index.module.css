@@ -1,0 +1,17 @@
+.carousel{
+    background: #000000;
+    height: 45vh;
+    margin-top: 50px;
+    /* display: flex; */
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    opacity: 0.5;
+}
+
+.carousel_title{
+    position: absolute;
+    color: var(--white);
+    font-size: 20px;
+    margin-top: 50px;
+}
