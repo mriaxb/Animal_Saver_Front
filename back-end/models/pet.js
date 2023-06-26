@@ -34,4 +34,8 @@ const Pet = sequelize.define('Pet', {
   },
 });
 
+Pet.associate = (models) => {
+  Pet.belongsTo(models.Protetor, { as: 'pet_protetor' });
+};
+
 module.exports = Pet;

@@ -50,6 +50,8 @@ Protetor.prototype.compararSenha = async function (senha) {
   return await bcrypt.compareSync(senha, this.senha);
 };
 
-Protetor.hasMany(require('./pet'), { as: 'pets' });
+Protetor.associate = (models) => {
+  Protetor.hasMany(models.Pet, { as: 'protetor_pets' });
+};
 
 module.exports = Protetor;

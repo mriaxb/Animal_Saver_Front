@@ -5,16 +5,15 @@ const Protetor = require('./models/protetor');
 const Pet = require('./models/pet');
 
 // Importa as rotas
-const petRoutes = require('./routes/router');
-const protetorRoutes = require('./routes/router');
+const routes = require('./routes/router');
 
 // Configurar o aplicativo Express
 const app = express();
 app.use(bodyParser.json());
 
 // Rotas para as models
-app.use('/api/pets', petRoutes);
-app.use('/api/protetores', protetorRoutes);
+app.use('/api/pets', routes);
+app.use('/api/protetores', routes);
 
 // Rota padrão
 app.get('/', (req, res) => {
@@ -42,7 +41,7 @@ async function iniciar() {
 iniciar();
 
 // Iniciar o servidor
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Servidor está executando na porta ${PORT}`);
 });
