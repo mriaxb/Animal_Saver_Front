@@ -178,6 +178,6 @@ module.exports = {
   atualizarPet,
   excluirPet,
   adicionarPetAoProtetor,
-  transferirPetDeProtetor,
+  transferirPetParaProtetor,
   removerPetDoProtetor
 };

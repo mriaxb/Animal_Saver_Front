@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const ProtetorController = require('../controllers/protetorController');
+const ProtetorController = require('../controllers/protetor');
 const multer = require('multer');
-const PetController = require('../controllers/petController');
+const PetController = require('../controllers/pet');
 
 // Configuração do multer para o upload de imagem
 const storage = multer.diskStorage({

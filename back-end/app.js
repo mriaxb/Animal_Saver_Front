@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const sequelize = require('./config');
+const sequelize = require('./db');
 const Protetor = require('./models/protetor');
 const Pet = require('./models/pet');
 
 // Importa as rotas
-const petRoutes = require('./routes/petRoutes');
-const protetorRoutes = require('./routes/protetorRoutes');
+const petRoutes = require('./routes/router');
+const protetorRoutes = require('./routes/router');
 
 // Configurar o aplicativo Express
 const app = express();
