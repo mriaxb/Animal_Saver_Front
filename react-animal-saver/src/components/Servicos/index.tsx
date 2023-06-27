@@ -6,18 +6,29 @@ import servico3 from '../../assets/servicos/assinaturas.jpeg';
 import servico4 from '../../assets/servicos/Asset-3.png';
 import servico5 from '../../assets/servicos/Asset-4.png';
 import servico6 from '../../assets/servicos/Asset-6.png';
-
+import setaEsquerda from '../../assets/setaEsq.png';
+import setaDireita from '../../assets/setaDir.png';
 
 export const Servicos = () => {
     return(
         <section className={style.section}>
            
-            <Container>
-                <div id="carouselExampleIndicatorsCats" className="carousel slide">
+           <h1 className={style.title}>
+                SERVIÇOS
+                <hr />
+            </h1>
+            
+            <Container >
+                <div id="carouselExampleIndicatorsCats" className={`carousel slide ${style.container}`}>
                     <div className={`carousel-indicators ${style.indicators_pets}`}>
-                        <button type="button" data-bs-target="#carouselExampleIndicatorsCats" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicatorsCats" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                                                                                                                                                                </div>
+                        <button type="button" data-bs-target="#carouselExampleIndicatorsCats" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1">
+                            <img  src={setaEsquerda} alt=""/>
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicatorsCats" data-bs-slide-to="1" aria-label="Slide 2">
+                            <img src={setaDireita} alt="" />
+                        </button>
+                                                                                                                                                                                                
+                    </div>
                     <div className={`carousel-inner ${style.carousel_pets}`}>
                         <div className="carousel-item active">
                             <Row>
@@ -122,14 +133,7 @@ export const Servicos = () => {
                         </div>
                        
                     </div>
-                    <button className={`carousel-control-prev  `} type="button" data-bs-target="#carouselExampleIndicatorsCats" data-bs-slide="prev">
-                        <span className={`carousel-control-prev-icon ${style.seta_esq}`} aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsCats" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
+                    
                 </div>  
             </Container>
             
