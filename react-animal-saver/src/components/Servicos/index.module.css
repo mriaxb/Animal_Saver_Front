@@ -1,17 +1,11 @@
-a.title_pets{
-    display: flex;
-    width: fit-content;
-    background-color: #175EA8;
-    border-radius: 0 25px 25px 0;
-    margin-block: 2rem;
+.container{
+    margin-bottom: 15px;
 }
 
-.title_pets h1{
-    display: flex;
-    width: 10rem;
-    margin-left: 150px;
+.title{
+    margin-left: 5%;
+    margin-top: 5%;
 }
-
 .card_pets{
     width: 284px;
     height: 100px;
@@ -96,12 +90,30 @@ a.title_pets{
     padding-block: 2rem;
 }
 
-.carousel-indicators [data-bs-target]{
+/* .carousel-indicators [data-bs-target]{
     background-color: #000;
+} */
+
+.indicators_pets{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    margin-top: 10px!important;
 }
 .indicators_pets button{
     background-color: #666!important;
+    width: 0px!important;
+    height: 0px!important;
+    /* border: 1px solid #000!important;
+    border-radius: 20px!important;*/
+    margin-left: 30px!important; 
+
 }
 .indicators_pets button.active{
     background-color: #175EA8!important;
+}
+.indicators_pets img{
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
 }
