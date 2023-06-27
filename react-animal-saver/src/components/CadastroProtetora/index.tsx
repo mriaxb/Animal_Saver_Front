@@ -38,6 +38,9 @@ export const CadastroProtetora = () => {
       if (response.ok) {
         const novoProtetor = await response.json();
         console.log('Protetor cadastrado:', novoProtetor);
+        window.alert("Cadastro realizado com sucesso!")
+
+        
       } else {
         console.error('Erro ao cadastrar o protetor:', response.status, response.statusText);
       }
