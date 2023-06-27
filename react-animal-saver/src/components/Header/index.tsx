@@ -9,7 +9,7 @@ export const Header = () => {
         <>
             <header className={styles.header}>
                 <nav>
-                    <img src={logoAnimalSave} alt="" />
+                    <img src={logoAnimalSave} alt="img logo" />
                 </nav>
                 <nav>
                     <a className={styles.home_class}><Link to="/">Home</Link></a> <span></span>

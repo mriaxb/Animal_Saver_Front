@@ -1,60 +1,75 @@
-.section{
-    margin-bottom: 5rem;
-}
-
-.article_pai{
-    margin-top: 150px;
+a.title_pets{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    width: auto;
+    width: fit-content;
+    background-color: #175EA8;
+    border-radius: 0 25px 25px 0;
+    margin-block: 2rem;
+}
 
-}
-.title{
-    color: var(--dark--gray);
-    margin-top: 100px;
-    margin-left: 80px;
-}
-.article{
+.title_pets h1{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--gray--100);
-    height: 380px;
-    width: 280px;
-    margin-top: -50px;
-
-    border-radius: 13px;
+    width: 10rem;
+    margin-left: 150px;
 }
-.article:hover{
-    box-shadow: 10px 2px 20px 2px rgba(0, 0, 0, 0.25);
+
+.card_pets{
+    width: 284px;
+    height: 100px;
+    display: inline-flex!important;
+    background: #F4F4F4!important;
+}
+.card_pets:hover{
+    box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.25);
     transition: 0.6s;
 }
-.article img{
-    width: 200px;
-    height: 240px;
+
+.img_pets{
+    max-width: 240px;   
+    margin: 0 auto;
+    border: solid 1px #002E78;
+    padding: 0.5rem;
+    border-radius: 0!important;
+    margin: 1rem;
+    margin-left: 20px;
 }
-.banner_title{
-    height: 40px;
-    width: 140px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    margin-left: -215px;
-    background-color: var(--blue);
-    color: var(--white);
+.img_pets_servico1{
+    max-width: 220px;
+    margin: 0 auto;
+    border: solid 1px #002E78;
+    padding: 0.5rem;
+    border-radius: 0!important;
+    margin: 1rem;
+    margin-left: 25px;
+
 }
 
-.banner_foto{
-    border-radius: 13px;
-    margin-top: 8px;
+.name_pets{
+    margin-top: -40px;
+    margin-inline: auto;
+    border-radius: 25px;
+    padding: .5rem 2.5rem;
+    color: #FFF;
+    background-color: #002E78;
 }
+
+.name_pets span{
+    background-color: transparent;
+}
+
+.description_pets{
+    color: #000;
+    text-align: start;
+}
+
+.description_pets > span{
+    display: flex;
+
+    width: 100%;
+}
+.description_pets > span > strong{
+    margin-right: 8px ;
+}
+
 
 .button{
     height: 50px;
@@ -73,9 +88,20 @@
     color: var(--white);
     transition: 0.5s;
 }
-.seta{
-    height: 110px;
-    width: 120px;
-    margin-left: 5px;
+.seta_esq{
+    background-color: #000!important;
+    margin-right: 20px!important;
+}
+.carousel_pets{
+    padding-block: 2rem;
 }
 
+.carousel-indicators [data-bs-target]{
+    background-color: #000;
+}
+.indicators_pets button{
+    background-color: #666!important;
+}
+.indicators_pets button.active{
+    background-color: #175EA8!important;
+}
