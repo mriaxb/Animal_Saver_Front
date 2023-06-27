@@ -2,10 +2,11 @@
     color: var(--white);
     font-weight: 700;
 }
-.carrousel_pai{
+.carrousel_fundo{
     background-image: url('../../assets/fundo1.jpeg');
     background-repeat:no-repeat;
     background-size:cover;
+    
 
 }
 
@@ -16,6 +17,7 @@
     min-height: 65vh;
     align-items: center;
     justify-content: center; 
+    position: relative;
     /* background-color: var(--white); */
     /* display: flex; */
 }
@@ -30,11 +32,6 @@
 
 }
 
-.item_carousel{
-    min-height: 100px;
-    min-width: 200px;
-    padding-inline: 18px;
-}
 
 .item_caurosel img{
     width: 20%;

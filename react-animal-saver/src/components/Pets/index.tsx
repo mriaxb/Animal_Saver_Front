@@ -1,4 +1,4 @@
-import { Col, Row, Card, Button, Container } from 'react-bootstrap';
+import { Col, Row, Card, Container } from 'react-bootstrap';
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/js/bootstrap.min.js'
 import style from './index.module.css'

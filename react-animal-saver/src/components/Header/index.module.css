@@ -10,6 +10,10 @@
     justify-content: space-around;
 
 }
+.header img{
+    width: 220px;
+}
+
 nav{
     display: flex;
     align-items: center;
