@@ -1,6 +1,5 @@
 import Footer from "./components/Footer"
 import { Pets } from "./components/Pets"
-import { Fornecedor } from "./components/fornecedores"
 import { Home } from "../src/components/Home"
 import { Protetor } from "../src/components/Protetores/protetores"
 import './global.css'
