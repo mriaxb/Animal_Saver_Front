@@ -1,4 +1,5 @@
 .header {
+    font-family: "Karla";
     background: linear-gradient(90.3deg, #ECEBE9 3.08%, #F5F5F5 99.09%);
 
     height: 70px;
@@ -8,6 +9,19 @@
     align-items: center;
     justify-content: space-around;
 
+}
+.header img{
+    width: 220px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav a{
+    text-decoration: none;
+    color: var(--dark--gray);
 }
 a{
     text-decoration: none;
@@ -26,15 +40,10 @@ a:hover{
 .login_class{
     font-weight: 700;
 }
-span{
-    background-color: #000;
-    width: 4px;
-    height: 4px;
-    left: 6px;
-    border-radius: 10px;
-}
 
 .button{
+    font-family: "Karla";
+
     width: 180px;
     height: 46px;
     background: var(--blue);
@@ -42,10 +51,9 @@ span{
     border: none;
     cursor: pointer;
 
-    font-family: 'Inter';
     font-style: normal;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--white);
 }
 .button:hover{
