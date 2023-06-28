@@ -1,5 +1,12 @@
+import { Carrousel } from "../Carousel"
+
+
+
 export const Protetor = () => {
     return (
-            <h1>Area do protetorr</h1>
+        <>
+            <Carrousel></Carrousel>
+        </>
+
     )
 }

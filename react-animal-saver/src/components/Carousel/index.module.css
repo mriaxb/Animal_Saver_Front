@@ -1,0 +1,43 @@
+.card_pai{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card_pets{
+    padding: 30px;
+
+    background: #1C1B1B;
+    opacity: 0.9;
+    
+}
+
+.description_pets{
+    color: #e7e3e3;
+    text-align: start;
+    
+}
+
+.description_pets > span{
+    display: flex;
+
+    width: 100%;
+}
+.description_pets > span > strong{
+    margin-right: 8px ;
+}
+
+
+.carousel_pets{
+    padding-block: 2rem;
+    height: 380px;
+
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #666!important;
+}
+.indicators_pets button{
+    background-color: #666!important;
+}
