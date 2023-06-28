@@ -1,8 +1,8 @@
 import Footer from "./components/Footer"
 import { Pets } from "./components/Pets"
 import { Fornecedor } from "./components/fornecedores"
-import { Home } from "./components/home"
-import { Protetor } from "./components/protetores/protetores"
+import { Home } from "../src/components/Home"
+import { Protetor } from "../src/components/Protetores/protetores"
 import './global.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
  
