@@ -7,7 +7,7 @@ export const Home = () => {
 
     return (
 
-        <div data-testid="home-id">
+        <div data-testid="home">
             <article className={style.carrousel_fundo}>
                 <Carrousel/>
             </article>
