@@ -11,7 +11,7 @@ import setaDireita from '../../assets/setaDir.png';
 
 export const Servicos = () => {
     return(
-        <section className={style.section}>
+        <section data-testid="servicos-id" className={style.section}>
            
            <h1 className={style.title}>
                 SERVIÇOS

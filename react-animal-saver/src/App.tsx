@@ -1,7 +1,7 @@
-import Footer from './components/Footer';
-import { Pets } from "./components/Pets";
-import { Home } from './components/Home';
-import { Protetor } from "./components/Protetores/protetores";
+import Footer from "./components/Footer"
+import { Pets } from "./components/Pets"
+import { Home } from "../src/components/Home"
+import { Protetor } from "../src/components/Protetores/protetores"
 import './global.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { LoginProtetora } from './components/LoginProtetora';
