@@ -1,4 +1,4 @@
-import {useCallback, useState } from "react";
+import { useState } from "react";
 import {createPet} from '../../services/pet'
 
 import { Col, Form, Row } from 'react-bootstrap';
@@ -9,34 +9,43 @@ export const CadastroPet = () => {
   const [raca, setRaca] = useState<string>('');
   const [perfilFisico, setPerfilFisico] = useState<string>('');
   const [perfilComportamental, setPerfilComportamental] = useState<string>('');
-  const [foto, setFoto] = useState<string>('');
+  const [imagem, setImagem] = useState<File | null>(null);
 
-  const addPet = (() => {
-    const newPet = {
-      id: '0',
-      nome,
-      raca,
-      perfilFisico,
-      perfilComportamental,
-      foto,
+  const popularImagem = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files && event.target.files.length > 0) {
+      setImagem(event.target.files[0]);
     }
+  };
+
+  const handleSubmit = async (event:any) => {
+    event.preventDefault();
+
+    const newPet = new FormData();
+    newPet.append('nome', nome);
+    newPet.append('raca', raca);
+    newPet.append('perfilFisico', perfilFisico);
+    newPet.append('perfilComportamental', perfilComportamental);
+    if(imagem){
+     newPet.append('imagem', imagem);
+    }
+    console.log(newPet);
+   
     createPet(newPet);
-  });
+  };
 
   return (
     <>
       <main className={style.main}>
         <h1>CADASTRE SEU ANIMAL PROTEGIDO</h1>
         <article className={style.article}>
-          <Form className={style.form}>
+          <Form className={style.form} onSubmit={handleSubmit}>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formFile">
                 <Form.Label>IMAGEM</Form.Label>
                 <Form.Control
                   type="file"
-                  placeholder="Insira a foto"
-                  value={foto}
-                  onChange={(event) => setFoto(event.target.value)}
+                  accept="image/*"
+                  onChange={popularImagem}
                 />
               </Form.Group>
 
@@ -94,7 +103,6 @@ export const CadastroPet = () => {
 
             <button  
               className={style.button}
-              onClick={addPet} 
             >
               CADASTRAR
             </button>

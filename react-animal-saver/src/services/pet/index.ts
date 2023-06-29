@@ -1,6 +1,5 @@
 import { AxiosRequestConfig } from "axios";
 import { apiRequest } from "../../configs/api";
-import { Pet } from "../../models/Pet";
 
 // export const getTasks = async (): Promise<Task[]> => {
 //   const config: AxiosRequestConfig = {
@@ -10,13 +9,13 @@ import { Pet } from "../../models/Pet";
 //   return await apiRequest<Task[]>(config);
 // };
 
-export const createPet = async (data: Pet): Promise<Pet> => {
+export const createPet = async (data: FormData) => {
   const config: AxiosRequestConfig = {
     method: "POST",
-    url: "/pet",
+    url: "/api/pets/pet",
     data,
   };
-  return await apiRequest<Pet>(config);
+  return await apiRequest(config);
 };
 
 // export const deleteTask = async (id: string): Promise<void> => {

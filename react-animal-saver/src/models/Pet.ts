@@ -4,5 +4,5 @@ export type Pet = {
     raca: string;
     perfilFisico:string;
     perfilComportamental:string;
-    foto:string;
+    imagem:File | null;
 }
