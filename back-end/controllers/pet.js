@@ -4,15 +4,15 @@ const Protetor = require('../models/protetor');
 // criar um novo pet
 async function criarPet(req, res) {
   try {
-    const { nome, raca, observacao1, observacao2 } = req.body;
+    const { nome, raca, perfilFisico, perfilComportamental } = req.body;
     const imagem = req.file;
 
     // Cria um novo pet no banco de dados
     const petCriado = await Pet.create({
       nome,
       raca,
-      observacao1,
-      observacao2,
+      perfilFisico,
+      perfilComportamental,
       imagem: imagem.filename,
     });
 

@@ -4,12 +4,21 @@ const sequelize = require('./db');
 const Protetor = require('./models/protetor');
 const Pet = require('./models/pet');
 
+
 // Importa as rotas
 const routes = require('./routes/router');
 
 // Configurar o aplicativo Express
 const app = express();
 app.use(bodyParser.json());
+
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
 
 // Rotas para as models
 app.use('/api/pets', routes);

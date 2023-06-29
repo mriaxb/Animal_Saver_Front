@@ -10,27 +10,17 @@ const Pet = sequelize.define('Pet', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  observacao1: {
+  perfilFisico: {
     type: DataTypes.STRING,
     allowNull: true
   },
-  observacao2: {
+  perfilComportamental: {
     type: DataTypes.STRING,
     allowNull: true
   },
   imagem: {
     type: DataTypes.STRING,
     allowNull: true
-  },
-  professorId: {
-    type: DataTypes.INTEGER,
-    allowNull: true,
-    references: {
-      model: 'Professores',
-      key: 'id',
-    },
-    onDelete: 'SET NULL',
-    onUpdate: 'CASCADE',
   },
 });
 

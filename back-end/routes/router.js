@@ -25,7 +25,7 @@ router.delete('/protetor/:id', ProtetorController.excluirProtetor);
 router.post('/protetor/login', ProtetorController.autenticarLogin);
 
 // PET
-router.post('/pet', PetController.criarPet);
+//router.post('/pet', PetController.criarPet);
 router.post('/pet', upload.single('imagem'), PetController.criarPet); // Middleware de upload
 router.get('/pet/list', PetController.obterPets);
 router.get('/pet/:id', PetController.obterPetPorId);
