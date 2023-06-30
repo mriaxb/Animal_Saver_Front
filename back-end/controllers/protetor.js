@@ -1,5 +1,5 @@
 const Protetor = require('../models/protetor');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 // criar um novo protetor
 async function criarProtetor(req, res) {
@@ -38,7 +38,7 @@ async function autenticarLogin(req, res) {
     }
 
     // compara a senha fornecida com a senha armazenada no banco de dados
-    const senhaCorreta = await protetor.compararSenha(senha);
+    const senhaCorreta = await bcrypt.compare(senha, protetor.senha);
     if (!senhaCorreta) {
       return res.status(401).json({ message: 'Credenciais inválidas' });
     }
