@@ -1,25 +1,31 @@
-const mongoose = require('mongoose');
+const { Sequelize, DataTypes } = require('sequelize');
+const sequelize = require('../db');
 
-const petSchema = new mongoose.Schema({
+const Pet = sequelize.define('Pet', {
   nome: {
-    type: String,
-    required: true
+    type: DataTypes.STRING,
+    allowNull: false
   },
   raca: {
-    type: String,
-    required: true
+    type: DataTypes.STRING,
+    allowNull: false
   },
-  observacao1: {
-    type: String
+  perfilFisico: {
+    type: DataTypes.STRING,
+    allowNull: true
   },
-  observacao2: {
-    type: String
+  perfilComportamental: {
+    type: DataTypes.STRING,
+    allowNull: true
   },
   imagem: {
-    type: String
-  }
+    type: DataTypes.STRING,
+    allowNull: true
+  },
 });
 
-const Pet = mongoose.model('Pet', petSchema);
+Pet.associate = (models) => {
+  Pet.belongsTo(models.Protetor, { as: 'pet_protetor' });
+};
 
 module.exports = Pet;

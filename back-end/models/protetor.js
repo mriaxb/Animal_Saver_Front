@@ -1,71 +1,57 @@
-const mongoose = require('mongoose');
+const { Sequelize, DataTypes } = require('sequelize');
 const bcrypt = require('bcryptjs');
+const sequelize = require('../db');
 
-const protetorSchema = new mongoose.Schema({
-  senhaHash: {
-    type: String,
-    required: true
+const Protetor = sequelize.define('Protetor', {
+  nome: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+  endereco: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+  email: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+  telefone: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+  espacoFisico: {
+    type: DataTypes.INTEGER,
+    allowNull: true
+  },
+  gastos: {
+    type: DataTypes.INTEGER,
+    allowNull: true
+  },
+  lotacao: {
+    type: DataTypes.INTEGER,
+    allowNull: true
+  },
+  senha: {
+    type: DataTypes.STRING,
+    allowNull: true
   }
 });
 
 // criptografar a senha antes de salvar o protetor
-protetorSchema.pre('save', async function (next) {
-  const protetor = this;
-  if (protetor.isModified('senha') || protetor.isNew) {
-    try {
-      const hash = await bcrypt.hash(protetor.senha, 10);
-      protetor.senhaHash = hash;
-    } catch (error) {
-      return next(error);
-    }
+Protetor.beforeCreate(async (protetor) => {
+  if (protetor.senha) {
+    const salt = await bcrypt.genSaltSync(10);
+    protetor.senha = bcrypt.hashSync(protetor.senha, salt);
   }
-  next();
 });
 
 // comparar a senha fornecida com a senha armazenada no banco de dados
-protetorSchema.methods.compararSenha = async function (senha) {
-  try {
-    return await bcrypt.compare(senha, this.senhaHash);
-  } catch (error) {
-    throw new Error('Erro ao comparar as senhas');
-  }
+Protetor.prototype.compararSenha = async function (senha) {
+  return await bcrypt.compareSync(senha, this.senha);
 };
 
-const protetorSchema = new mongoose.Schema({
-  nome: {
-    type: String,
-    required: true
-  },
-  endereco: {
-    type: String,
-    required: true
-  },
-  email: {
-    type: String,
-    required: true
-  },
-  telefone: {
-    type: String,
-    required: true
-  },
-  espacoFisico: {
-    type: Number,
-    required: true
-  },
-  gastos: {
-    type: Number,
-    required: true
-  },
-  lotacao: {
-    type: Number,
-    required: true
-  },
-  senha: {
-    type: String,
-    required: true
-  }
-});
-
-const Protetor = mongoose.model('Protetor', protetorSchema);
+Protetor.associate = (models) => {
+  Protetor.hasMany(models.Pet, { as: 'protetor_pets' });
+};
 
 module.exports = Protetor;
