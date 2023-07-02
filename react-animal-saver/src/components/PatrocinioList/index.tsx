@@ -9,7 +9,7 @@ import style from '../../components/PatrocinioList/index.module.css';
 export const PatrocinioList = () => {
 
     return(
-        <section className={style.section}>
+        <section data-testid="patrocinio-id" className={style.section}>
             <article className={style.article}>
                 <a href="https://prontodog.com.br/">
                     <img src={logo1} alt="logo pronto dog" />
