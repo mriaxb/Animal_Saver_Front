@@ -1,12 +1,10 @@
 import { Col, Row, Card, Container, Button, Modal } from 'react-bootstrap';
-import 'jquery/dist/jquery.min.js'
-import 'bootstrap/dist/js/bootstrap.min.js'
-import style from './index.module.css'
-
-import { DetalharPets } from '../DetalharPets';
-import React, { useEffect, useState } from 'react';
+import 'jquery/dist/jquery.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import style from './index.module.css';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useState, useEffect, SetStateAction } from 'react';
+
 
 interface Pet {
     id: number;
@@ -40,7 +38,7 @@ interface Pet {
     const [showModal, setShowModal] = useState(false);
     const [selectedPetId, setSelectedPetId] = useState(null);
   
-    const openModal = (id) => {
+    const openModal = (id: number | SetStateAction<null>) => {
       setSelectedPetId(id);
       setShowModal(true);
     };
