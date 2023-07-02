@@ -1,5 +1,6 @@
 import { Container, Row, Col, Card } from "react-bootstrap"
 import style from '../Carousel/index.module.css'
+import { Link } from "react-router-dom"
 
 export const Carrousel = () => {
     return (
@@ -35,10 +36,16 @@ export const Carrousel = () => {
                                     <Card className={style.card_pets}>
                                       <Card.Body className={style.description_pets}>
                                         <h1>Animal Save</h1>
-                                        <h5>NA DÚVIDA, AJUDE. <br />NA CERTEZA, ADOTE.</h5>
-                                        <span>Nós da Animal Save somos bons em organização e 
-                                                arrecadação de recursos. Nosso objetivo é prestar
-                                        prestar ajuda qualificada a quem já ajuda os animais.</span>
+                                        <h5>Conheça nossos protetores</h5>
+                                        <span>Venha fazer parte da nossa comunidade você também!!</span>
+                                        <article className={style.article}>
+                                            <Link to="/cadastroProtetora"> 
+                                                <button className={style.button1}>Seja um(a) Protetor(a)</button>
+                                            </Link>
+                                            <Link to="/protetor"> 
+                                                <button className={style.button2}>Ver Protetores</button>
+                                            </Link>       
+                                        </article>
                                       </Card.Body> 
                                     </Card>
                                 </Col>
@@ -60,14 +67,6 @@ export const Carrousel = () => {
                             </Row>
                         </div>
                     </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
                 </div>  
             </Container>
             

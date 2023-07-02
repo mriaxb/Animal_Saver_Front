@@ -8,9 +8,9 @@ export const LoginProtetora = () => {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
   
-    const handleSubmit = async (event: any) => {
+    const handleSubmit = async (event:any) => {
       event.preventDefault();
-
+  
       try {
         const response = await fetch('http://localhost:3000/api/protetores/protetor/login', {
           method: 'POST',
@@ -19,23 +19,18 @@ export const LoginProtetora = () => {
           },
           body: JSON.stringify({ email, senha }),
         });
-        
+  
         if (response.ok) {
-            console.log("login realizado")
-          // Autenticação bem-sucedida, redirecionar ou fazer outras ações necessárias
+          console.log("Login realizado com sucesso");
         } else {
-            console.log("Erro")
-            console.log(email)
-            console.log(senha)
-          // Autenticação falhou, tratar o erro de acordo com a resposta da API
+          console.log("Erro ao fazer login");
           const errorData = await response.json();
           console.log(errorData);
         }
       } catch (error) {
-        // Erro ao fazer a requisição
         console.error(error);
       }
-    }
+    };
 
     return(
         <>
@@ -49,7 +44,7 @@ export const LoginProtetora = () => {
                                 type="email" 
                                 placeholder="Escreva o email" 
                                 value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e:any) => setEmail(e.target.value)}
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
@@ -58,7 +53,7 @@ export const LoginProtetora = () => {
                                 type="password" 
                                 placeholder='Escreva a senha' 
                                 value={senha}
-                                onChange={(e) => setSenha(e.target.value)}    
+                                onChange={(e:any) => setSenha(e.target.value)}   
                             />
                         </Form.Group>
                         <article className={style.button_control}>

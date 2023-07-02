@@ -42,7 +42,7 @@ export const Servicos = () => {
                                             <span><strong>Localização:</strong><span>Rio de Janeino</span></span>
                                             <a href='https://www.paypal.com/donate?hosted_button_id=RYTJT9DQUDR7C'>
                                                 <div className="text-center mt-4 px-4">
-                                                <button className={style.button}>VER MAIS</button>
+                                                    <button className={style.button1}>VER MAIS</button>
                                                 </div>
 
                                             </a>

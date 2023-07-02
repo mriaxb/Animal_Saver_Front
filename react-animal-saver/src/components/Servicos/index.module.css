@@ -82,6 +82,23 @@
     color: var(--white);
     transition: 0.5s;
 }
+.button1{
+    height: 50px;
+    width: 170px;
+    margin-top: 10px;
+    color: var(--blue);
+    border-color: var(--blue);
+    cursor: pointer;
+    background-color: var(--gray--100);
+    padding: 5px;
+    margin-bottom: 13px;
+}
+
+.button1:hover{
+    background: var(--blue);
+    color: var(--white);
+    transition: 0.5s;
+}
 .seta_esq{
     background-color: #000!important;
     margin-right: 20px!important;
@@ -116,4 +133,32 @@
     height: 30px;
     width: 30px;
     margin-left: 5px;
+}
+@media (max-width: 500px) {
+
+    .card_pets{
+        max-width: 200px;  
+        height: 340px!important; 
+        font-size: 12px;
+        margin-bottom: 5%;
+    }
+    .card_pets img{
+        max-width: 160px;
+        margin-left: 10%;
+    }
+    .description_pets{
+        margin-top: -7%;
+    }
+    .button{
+        width: 130px;
+        height: 30px;
+        margin-left: -7%;
+        margin-top: -5%;
+    }
+    .button1{
+        width: 130px;
+        height: 30px;
+        margin-left: -40%;
+        margin-top: -5%;
+    }
 }
