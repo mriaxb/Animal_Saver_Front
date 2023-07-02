@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { LoginProtetora } from './components/LoginProtetora';
 import { Header } from './components/Header';
 import { CadastroProtetora } from './components/CadastroProtetora';
+import { CadastroPet } from './components/CadastroPet';
  
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/protetor" element={<Protetor/>}/>
           <Route path="/loginProtetora" element={<LoginProtetora/>}/>
           <Route path="/cadastroProtetora" element={<CadastroProtetora/>}/>
+          <Route path="/cadastroPet" element={<CadastroPet/>}/>
           
           {/* <Route path="/login" element={<Login/>}/>
           <Route path="/cadastrodeanimal" element={<CadastroAnimal/>}/> */}
