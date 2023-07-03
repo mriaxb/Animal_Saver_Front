@@ -8,9 +8,11 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "server": "json-server ./src/configs/database/db.json -p 3002 -w",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "cy:open": "npx cypress open"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.2",
+    "@types/mocha": "^10.0.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
@@ -36,6 +39,7 @@
     "@vitejs/plugin-react": "^4.0.0",
     "@vitest/coverage-v8": "^0.32.2",
     "@vitest/ui": "^0.32.2",
+    "cypress": "^12.16.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",

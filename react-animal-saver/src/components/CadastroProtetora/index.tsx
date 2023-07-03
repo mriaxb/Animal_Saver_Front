@@ -53,10 +53,10 @@ export const CadastroProtetora = () => {
 
   return (
     <>
-      <main className={style.main}>
+      <main data-testid="cadastro-protetor-id" className={style.main}>
         <h1>Seja um(a) Protetor(a)!</h1>
         <article className={style.article}>
-          <Form className={style.form} onSubmit={handleSubmit}>
+          <Form data-testid="formulario-id" className={style.form} onSubmit={handleSubmit}>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>NOME</Form.Label>
@@ -145,7 +145,7 @@ export const CadastroProtetora = () => {
               </Form.Group>
             </Row>
 
-            <button type="submit" className={style.button}>
+            <button data-testid="cadastrar-button-id" type="submit" className={style.button}>
               CADASTRAR
             </button>
             
