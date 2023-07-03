@@ -81,7 +81,7 @@ interface Pet {
                       <span>{pet.perfilFisico}</span>
                     </span>
                     <div className="text-center mt-4 px-4">
-                      <Button variant="primary" onClick={() => openModal(pet.id)}>
+                      <Button data-testid="button" variant="primary" onClick={() => openModal(pet.id)}>
                         Detalhar Pets
                       </Button>
                     </div>
@@ -93,7 +93,7 @@ interface Pet {
         </Container>
   
         {/* Modal para exibir os detalhes do pet */}
-        <Modal show={showModal} onHide={closeModal}>
+        <Modal data-testid="modal" show={showModal} onHide={closeModal}>
           <Modal.Header closeButton>
             <Modal.Title>Detalhes do Pet</Modal.Title>
           </Modal.Header>
