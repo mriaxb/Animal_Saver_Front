@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const sequelize = require('./db');
 const Protetor = require('./models/protetor');
 const Pet = require('./models/pet');
+const path = require('path'); // Importe o módulo 'path'
 
 
 // Importa as rotas
@@ -19,6 +20,8 @@ app.use((req, res, next) => {
   next();
 });
 
+// Rota para servir arquivos estáticos
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Rotas para as models
 app.use('/api/pets', routes);
@@ -50,7 +53,7 @@ async function iniciar() {
 iniciar();
 
 // Iniciar o servidor
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor está executando na porta ${PORT}`);
 });

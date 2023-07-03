@@ -3,6 +3,7 @@ const router = express.Router();
 const ProtetorController = require('../controllers/protetor');
 const multer = require('multer');
 const PetController = require('../controllers/pet');
+const path = require('path'); // Importe o módulo 'path'
 
 // Configuração do multer para o upload de imagem
 const storage = multer.diskStorage({
@@ -34,5 +35,9 @@ router.delete('/pet/:id', PetController.excluirPet);
 router.post('/pet/:petId/protetor', PetController.adicionarPetAoProtetor); // Adicionar pet a um protetor
 router.put('/pet/:petId/protetor', PetController.transferirPetParaProtetor); // Transferir pet para outro protetor
 router.delete('/pet/:petId/protetor', PetController.removerPetDoProtetor); // Remover pet do protetor
+
+
+// Rota estática para servir os arquivos de imagem
+router.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 module.exports = router;
