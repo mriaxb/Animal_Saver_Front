@@ -84,3 +84,24 @@
 .indicators_pets button.active{
     background-color: #175EA8!important;
 }
+
+.p_modal{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.p_modal span{
+    font-weight: 500;
+}
+
+.modal_pets{
+    display: flex;
+     flex-direction: column;
+}
+
+.modal_titulo{
+    text-align: start;
+    margin-bottom: 1.5rem;
+}
+
