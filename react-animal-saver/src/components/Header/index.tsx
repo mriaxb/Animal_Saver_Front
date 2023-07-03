@@ -7,16 +7,16 @@ export const Header = () => {
     return(
 
         <>
-            <header className={styles.header}>
+            <header data-testid="header-id" className={styles.header}>
                 <nav>
                     <img src={logoAnimalSave} alt="img logo" />
                 </nav>
-                <nav>
+                <nav className={styles.links}>
                     <a className={styles.home_class}><Link to="/">Home</Link></a> <span></span>
                     <a><Link to="/pets">Pets</Link></a> <span></span>
                     <a><Link to="/protetor">Protetores</Link></a>
                 </nav>
-                <nav>
+                <nav className={styles.buttons}>
                     <Link to="/loginProtetora">
                         <a className={styles.login_class}>Login</a>
                     </Link>

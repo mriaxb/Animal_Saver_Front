@@ -21,3 +21,16 @@
 .article img{
     width: 160px;
 }
+@media (max-width: 500px) {
+    .section{
+        height: 80px;
+    }
+    .article{
+        height: 60px;
+        width: 71px;
+        padding-right: 21px;
+    }
+    .article img{
+        width: 60px;
+    }
+}

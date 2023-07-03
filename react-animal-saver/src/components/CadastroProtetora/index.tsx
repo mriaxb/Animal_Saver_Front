@@ -27,7 +27,7 @@ export const CadastroProtetora = () => {
         lotacao,
       };
 
-      const response = await fetch('http://localhost:3000/api/protetores/protetor', {
+      const response = await fetch('http://localhost:3001/api/protetores/protetor', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
