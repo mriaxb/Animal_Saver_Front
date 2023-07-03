@@ -1,7 +1,6 @@
 
 .main{
-    height: 120vh;
-    
+    padding-bottom: 20px;
 }
 .main h1{
     font-family: 'Lalezar';
@@ -15,17 +14,12 @@
     flex-direction: column;
     justify-content: center;
 }
-/* .form_part1{
-
-} */
 
 
 .form{
     margin-top: 20px;
     padding: 15px;
-    height: 65vh;
     background: var(--gray--200);
-    width: 60%;
     box-shadow: 8px 4px 15px 0px #00000040;
     margin-bottom: 20px;
 
@@ -65,4 +59,20 @@
     color: var(--gray--100);
     border: 2px solid var(--gray--100);
     transition: 0.7s;
+}
+
+.file_div{
+    height:100%;
+    width:90%;
+    border: 2px solid var(--gray--input);
+    border-radius: 10%;
+}
+
+
+.file_div:hover{
+    cursor:pointer;
+}
+
+.file_img{
+    width:40%;
 }

@@ -15,19 +15,21 @@ export const CadastroProtetora = () => {
   const handleSubmit = async (event:any) => {
     event.preventDefault();
 
-    try {
-      const data = {
-        nome,
-        telefone,
-        endereco,
-        espacoFisico,
-        email,
-        gastos,
-        senha,
-        lotacao,
-      };
+    const data = {
+      nome,
+      telefone,
+      endereco,
+      espacoFisico,
+      email,
+      gastos,
+      senha,
+      lotacao,
+    };
 
-      const response = await fetch('http://localhost:3001/api/protetores/protetor', {
+
+    try {
+      
+      const response = await fetch('http://localhost:3002/api/protetores/protetor', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -51,10 +53,10 @@ export const CadastroProtetora = () => {
 
   return (
     <>
-      <main className={style.main}>
+      <main data-testid="cadastro-protetor-id" className={style.main}>
         <h1>Seja um(a) Protetor(a)!</h1>
         <article className={style.article}>
-          <Form className={style.form} onSubmit={handleSubmit}>
+          <Form data-testid="formulario-id" className={style.form} onSubmit={handleSubmit}>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>NOME</Form.Label>
@@ -143,9 +145,10 @@ export const CadastroProtetora = () => {
               </Form.Group>
             </Row>
 
-            <button type="submit" className={style.button}>
+            <button data-testid="cadastrar-button-id" type="submit" className={style.button}>
               CADASTRAR
             </button>
+            
           </Form>
         </article>
       </main>

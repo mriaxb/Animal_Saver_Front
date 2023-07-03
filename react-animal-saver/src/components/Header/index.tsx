@@ -20,6 +20,8 @@ export const Header = () => {
                     <Link to="/loginProtetora">
                         <a className={styles.login_class}>Login</a>
                     </Link>
+
+                    
                     
                     <Link to="/CadastroProtetora"> 
                         <button className={styles.button}>Cadastre-se</button>
