@@ -7,7 +7,7 @@ export const Header = () => {
     return(
 
         <>
-            <header className={styles.header}>
+            <header data-testid="header-id" className={styles.header}>
                 <nav>
                     <img src={logoAnimalSave} alt="img logo" />
                 </nav>
