@@ -46,7 +46,6 @@ export const CadastroPet = () => {
     if(imagem){
      newPet.append('imagem', imagem);
     }
-    console.log(newPet);
    
     createPet(newPet).finally(() => {
       setNome("");
@@ -55,6 +54,7 @@ export const CadastroPet = () => {
       setPerfilFisico("");
       setImagem(null);
       setImagemSelecionada("");
+      console.log(newPet);
     })
   };
 
