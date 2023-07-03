@@ -15,19 +15,21 @@ export const CadastroProtetora = () => {
   const handleSubmit = async (event:any) => {
     event.preventDefault();
 
-    try {
-      const data = {
-        nome,
-        telefone,
-        endereco,
-        espacoFisico,
-        email,
-        gastos,
-        senha,
-        lotacao,
-      };
+    const data = {
+      nome,
+      telefone,
+      endereco,
+      espacoFisico,
+      email,
+      gastos,
+      senha,
+      lotacao,
+    };
 
-      const response = await fetch('http://localhost:3001/api/protetores/protetor', {
+
+    try {
+      
+      const response = await fetch('http://localhost:3002/api/protetores/protetor', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -146,6 +148,7 @@ export const CadastroProtetora = () => {
             <button type="submit" className={style.button}>
               CADASTRAR
             </button>
+            
           </Form>
         </article>
       </main>
