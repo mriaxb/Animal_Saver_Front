@@ -69,7 +69,7 @@ interface Pet {
                     alt="Card image cap"
                   />
                   <div className={style.name_pets}>
-                    <h5>{pet.nome}</h5>
+                    <h5>{pet.nome}</h5> 
                   </div>
                   <Card.Body className={style.description_pets}>
                     <span>
