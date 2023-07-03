@@ -76,10 +76,10 @@ export const LoginProtetora = () => {
 
   return (
     <>
-      <main className={style.main}>
+      <main data-testid="login-id" className={style.main}>
         <h1>Bem vindo(a) de volta Protetor(a)!</h1>
         <article className={style.article}>
-          <Form className={style.form} onSubmit={handleSubmit}>
+          <Form data-testid="formulario-login-id" className={style.form} onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>EMAIL</Form.Label>
               <Form.Control
@@ -102,7 +102,7 @@ export const LoginProtetora = () => {
               <p>
                 não é cadastrado(a)? <br /> Faça seu cadastro <strong>AQUI</strong>{' '}
               </p>
-              <Button id='button' type="submit" className={style.button}>
+              <Button data-testid="formulario-login-id" id='button' type="submit" className={style.button}>
                 ENTRAR
               </Button>
             </article>
