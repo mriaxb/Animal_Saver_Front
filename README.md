@@ -2,7 +2,9 @@
 
 ## Project setup
 ```
+cd react-animal-saver
 npm install
+npm run dev
 ```
 
 ### Compiles and hot-reloads for development
